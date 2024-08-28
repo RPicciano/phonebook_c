@@ -2,6 +2,9 @@
 
 # Basic User Database Program In C
 
+Please remember that the executable is a product of the main.c code, and that if you download these files you will need to change some things to be specific to your machine. Specifically, you will need to set
+the exact path to users.txt in _ALL_ fopen() instances. Otherwise, you will get a segmentation fault error. 
+
 This program does two basic (yet important) tasks:
 
 1. Reads all text from a text file, stores it and parses it to make it usable.
