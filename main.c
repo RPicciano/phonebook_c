@@ -18,7 +18,7 @@ char line[50];
 char *output[200]; // Pointer to output (will contain both user and # for future parsing)
 
 void handle_info(){
-	FILE *fptr = fopen("users.txt", "r"); // Opens file in 'read' mode
+	FILE *fptr = fopen("/Path/To/File/users.txt", "r"); // Opens file in 'read' mode
 
 // While we are under the max_lines to read and data in the file is not empty
 
@@ -43,7 +43,7 @@ void handle_info(){
 }
 
 void write_data(char user[10], char num[25]){ // This function will require two parameters of type char, with specificied max_sizes
-	FILE *fptr = fopen("users.txt", "r+"); // Open file (again) in READ mode
+	FILE *fptr = fopen("/Path/To/File/users.txt", "r+"); // Open file (again) in READ mode
 	long pos; // A larger int, with more memory (a little bit unneccessary in this case, but needed for larger files)
 
 	while(fgets(line, sizeof(line), fptr)){ // While the system finds 'something' in the file....
